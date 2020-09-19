@@ -16,12 +16,37 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   flex-wrap: wrap;
 }
 
+.site-header .logo {
+  width: 15rem;
+  max-width: 100%;
+}
+
 .site-header .site-title {
   width: 100%;
   font-weight: 300;
   font-size: 5rem;
   text-align: center;
 }
+
+.site-header nav {
+}
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+}
+.site-header nav ul li a {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #4299e1;
+  border-radius: 3px;
+  color: #4299e1;
+  text-decoration: none;
+}
+.site-header nav ul li a:hover {
+  background-color: #4299e1;
+  color: #f0f0f0;
+}
+
 
 main {
   width: 100%;

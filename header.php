@@ -8,5 +8,11 @@
   <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <header class="site-header">
+      <img class="logo" src="<?php echo get_theme_file_uri('img/hongo_logo.png'); ?>">
       <h1 class="site-title">hongomc</h1>
+      <?php wp_nav_menu(
+        array(
+          'container' => 'nav',
+        )
+      ); ?>
     </header>
