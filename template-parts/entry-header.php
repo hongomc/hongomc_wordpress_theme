@@ -1,9 +1,17 @@
 <header>
   <?php
-  if (is_singular()) {
-    the_title('<h1 class="entry-title">', '</h1>');
-  } else {
-    the_title('<h2 class="entry-title">', '</h2>');
+  if (is_singular()) { ?>
+    <h1 class="entry-title">
+      <?php the_title(); ?>
+    </h1>
+  <?php
+  } else { ?>
+    <h2 class="entry-title">
+      <a href="<?php the_permalink(); ?>">
+        <?php the_title(); ?>
+      </a>
+    </h1>
+  <?php
   }
   ?>
 </header>
